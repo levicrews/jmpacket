@@ -29,26 +29,20 @@ Here's an annotated file tree for this repository:
 │   ├── jobs.csv                                * list of jobs and their attributes to insert in cover letters
 │   └── uchicagologo.png
 ├── cv
-│   ├── <lastname>_cv.pdf
 │   ├── <lastname>_cv.tex                       * a nicer CV
 │   ├── <lastname>_cv-uchicagoformat.docx       * mandatory UChicago CV template
-│   ├── <lastname>_cv-uchicagoformat.pdf
 │   └── res.cls                                 * class for a nicer CV
 ├── jmIDs.tex                                   * LaTeX commands for your repeated ID elements (to be symlinked)
 ├── jmstatement.cls                             * common class for your statements and spiel (to be symlinked)
 ├── panel.pdf                                   * slides with advice for the job market (UChicago, May 2023)
 ├── spiel                                       * interview spiel
-│   ├── <lastname>_spiel.pdf
 │   └── <lastname>_spiel.tex
 ├── statement_deib                              * Diversity, Equity, Inclusion, & Belonging statement
-│   ├── <lastname>_deib.pdf
 │   └── <lastname>_deib.tex
 │   └── notes_deib.org
 ├── statement_research                          * research statement
-│   ├── <lastname>_research.pdf
 │   └── <lastname>_research.tex
 └── statement_teaching                          * teaching statement (experience + philosophy)
-    ├── <lastname>_teach.pdf
     └── <lastname>_teach.tex
     └── notes_teach.org
 ```
@@ -73,7 +67,7 @@ Here's an annotated file tree for this repository:
 
 ## CV, spiel, and statements
 
-- **Fill in your CV**. The UChicago placement committee will insist that you make a version using their `.docx` template so they can include it in the department's packet. I think it looks awful and I hate Microsoft Word. For your own applications and website, I recommend producing a nicer CV in LaTeX using the `res.cls` class.
+- **Fill in your CV**. The UChicago placement committee will insist that you make a version using their `.docx` template so they can include it in the department's packet. I think it looks, um, *not great*, and I hate Microsoft Word. For your own applications and website, I recommend producing a nicer CV in LaTeX using the `res.cls` class. Feel free to customize it to your liking.
 
 - At this point, you can **write your spiel or any of your statements**, since none of them will be customized for individual job postings. The corresponding `.tex` files are peppered with comments to help you adapt my statements and spiel into your own. For the DEIB and teaching statements, I've included additional files of notes pulled from other sources.
 
