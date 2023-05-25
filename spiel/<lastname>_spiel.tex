@@ -1,0 +1,228 @@
+\documentclass{jmstatement}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3ex}
+
+\begin{document}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\bfseries\scshape \myname}
+\fancyhead[R]{\bfseries\scshape Interview Spiel}
+\fancyfoot[C]{\thepage}
+
+\input{jmIDs.tex}
+
+% Refer to my advice in panel.pdf
+
+% Refine this so it sounds conversational: It should simultaneously...
+% - be so rehearsed that you can pick up from any point with ease if interrupted, and
+% - sound as if you're coming up with it naturally on the spot.
+
+% Remember: You want them to get excited about what you do,
+%           but a prerequisite is that they understand what you do!
+
+%----------------------------- Introduce yourself -----------------------------%
+
+\textbf{Thank you all for having me here today.} My name is \myname, and in
+my work I study \onesenID.
+
+%-------------------------------- 2min spiel ----------------------------------%
+
+\textbf{In my job market paper},
+% stating the research question (R), albeit in a somewhat roundabout way
+I evaluate a classic hypothesis---namely, that
+human capital spillovers attract workers into cities,
+and that the human capital accumulation that happens in cities then drives growth.
+So, in other words, agglomeration and growth are both outcomes of this process
+of knowledge sharing and accumulation.
+% narrative propulsion: "but there's a problem" + this is the Position in the RAP
+But developing a model in which this hypothesis could even possibly happen---let
+alone one that can be tested against the data or used to evaluate policy---has
+been a long-standing open problem in spatial economics.
+% problem exists "because" (= a "therefore" statement)
+The reason is that this problem is inherently high-dimensional:
+to have growth, you obviously need dynamics, and you need some kind of learning
+or investment that's presumably forward-looking.
+But to have cities you obviously need space,
+and if those cities attract workers with human capital spillovers, then
+space and dynamics are going to be inextricably linked in determining the equilibrium.
+% drive it home: everyone should care about this problem (that presumably you're about to solve)
+This problem is so difficult and yet important that the
+\textit{Handbook of Economic Growth}
+called it ``\textit{the} hard problem of regional economics.''
+% really lucked out that this problem had been given a name already :sweat_smile:
+
+% State your contribution explicitly, succinctly --> memorably!
+My contribution is to tackle the hard problem.
+% State how you're going to do it (M)
+I do so by adapting tools from heterogeneous agent macro in order to solve
+a new quantitative spatial endogenous growth model that I develop.
+% Highlight only the most important features of the method
+% ask yourself: "What does someone absolutely need to know to understand my results?"
+Workers in the model accumulate human capital more quickly in bigger
+and more-skilled cities,
+% this is part of the answer (A) to the research question (R)
+so the model provides a link between the spatial distribution of economic
+activity and growth.
+That means that any policies that affect that distribution, like place-based policies,
+can affect aggregate growth, too.
+% Whenever possible, remind people that you're contributing to the literature
+So this is the first framework that would allow us to trace out the long-run
+growth effects of policies that attract workers to particular locations or
+induce them to move away from others.
+
+% more M and A
+I quantify the model using data on U.S. metropolitan areas
+% highlight the most important empirical contribution, then lump the rest together
+and show that it can rationalize the faster wage growth of workers in big cities,
+as well as other key patterns in life-cycle wage profiles, migration decisions,
+and city characteristics.
+% state results of counterfactual or policy exercise as clearly and directly as possible
+As one of many possible applications of my framework,
+I consider a counterfactual in which I relax land use regulations
+in New York and San Francisco to the level of the median city, and I find that
+aggregate growth for the entire economy speeds up by 13 basis points.
+
+% Notice that describing M & A mostly follows the sequencing of the paper itself.
+
+%-------------------------------- 5-7min spiel --------------------------------%
+
+% Signposting is crucial in any verbal presentation!
+\textbf{So that's an overview of my paper. Now I'd be happy to dive into the details.}
+I'll start by talking about the model.
+As I mentioned before, I develop and solve a new quantitative spatial endogenous growth model.
+% Your job is to anticipate the natural sequence of questions your listener would ask.
+% First: "What are the main pieces of the model (environment, agents, decision problem)?"
+In particular, there is a system of cities, representing almost every MSA in the U.S.,
+populated by heterogeneous workers. Those workers make forward-looking
+migration decisions and human capital investments over the life cycle.
+% "what's important about how the model's pieces interact?"
+A key feature of the environment is a local externality
+that affects workers' returns to investment.
+Workers accumulate human capital more quickly in bigger and more skilled
+cities, which attracts workers to those cities despite higher costs of
+living. At the same time, this process of human capital accumulation is
+what's driving aggregate growth.
+% "so how do you make this tractable?"
+What makes this model tractable is that a balanced growth path of this economy can
+be written as what's called a ``mean field game."
+% "um, OK, what's that?"
+That means it can be described by just three things:
+\vspace{-2ex}
+\begin{enumerate}
+    \item a continuous-time Bellman equation to determine workers' decision rules,
+    \item a Kolmogorov forward equation to determine how the distribution of workers
+    will evolve in response to those rules, and
+    \item an expression for the growth rate that depends on this distribution.
+\end{enumerate}
+\vspace{-2ex}
+% "that expression seems key... what is it?"
+Specifically, I show that the growth rate can be expressed as a
+weighted average of the returns to investment in human capital, with the
+investment done in bigger and more skilled cities receiving more weight.
+% "can you break that down for me with an example?"
+So spending 10\% of your time learning in Chicago contributes more not only
+to your own wage growth but also to aggregate growth than the same 10\% in Iowa City.
+% "Interesting. What does that imply about the world of your model?"
+It follows that the spatial distribution of human capital matters
+for aggregate growth in this environment.
+Thus, workers' decision rules also matter, as do spatial policies, to which workers respond.
+So this is an environment in which spatial policies can matter for growth, and
+not even just by moving a fixed stock of skilled workers around the urban system,
+but by affecting the very \textit{production} of skilled workers in the economy.
+
+% "Very cool. But why should I think your model represents the real world?"
+I then quantify the model using U.S. data. I'll show that the model
+can jointly rationalize a host of facts about the urban cross-section---like
+the city size distribution and the fact that bigger cities are generally
+more productive, more skilled, but also more expensive---as well as facts
+about worker panels---like the recent evidence that workers learn more
+in big cities as well as observed patterns of life-cycle migration. All the
+while, the quantified model generates a 2\% aggregate growth rate as observed
+in the postwar U.S. economy.
+
+% "OK, why should I believe your results?"
+Let me tell you how I do it. I proceed in three steps.
+In the first, I use a five-year sample of migration flows between MSAs from the
+ACS to back out migration frictions. A key feature of the data is that I can
+separately observe people who move within the same MSA from those who don't move
+at all. That allows me to back out what I call the ``opportunity friction''
+directly from the observed flows, which governs how often workers can move.
+These flows are actually cross-tabbed by age, so I allow that opportunity friction
+to vary with age to account for things like marital status, family size,
+and homeownership that aren't in the model but affect mobility. I then construct
+a Head-Ries index with the flows to back out the bilateral migration costs.
+
+% "Fine, standard enough... what next?"
+The second step is to calibrate a subset of the parameters to previous structural
+estimates of the Ben-Porath model of human capital accumulation, which is nested
+by my model.
+% "OK, so you're not estimating the full model? Why not?"
+I take this approach primarily because of data limitations: common
+US worker panels like the PSID or NLSY have only a few thousand workers, so I
+wouldn't have enough power to separately identify location effects even if I
+had the computational power to match all the relevant moments in one scheme.
+
+% "Fair enough, but what about your model's key parameters? Hopefully you're not calibrating those..."
+In the third step, I use a minimum-distance estimator to pin down the remaining
+parameters, chief among them the elasticity that governs the strength of the
+human capital spillovers.
+I identify this by matching the recent evidence that workers learn more in big cities.
+% "I'm not familiar... what's the evidence?"
+In particular, what recent work has shown is that there is a sizable dynamic component
+to the city size wage premium: When a worker moves from a small city like Cedar
+Rapids, Iowa to a big one like Chicago, not only does her wage \textit{level}
+jump upon moving, but her wage \textit{growth} speeds up as well. This
+additional value of experience \textit{persists} even after moving back to a
+smaller city, which suggests that the worker's faster wage growth in fact
+reflects faster accumulation of human capital, consistent with my model.
+I use the degree to which wage growth speeds up with city size to pin down
+the strength of the spillovers in the investment technology, which is the
+dynamic agglomeration elasticity.
+Separately, I can use the degree to which the wage level jumps upon moving
+to pin down a static agglomeration elasticity that affects workers' productivity
+but not their human capital accumulation.
+
+% "OK, so you've got a model that fits the data. What can you do with it?"
+Once it's quantified, we can use my framework to think about the effects of spatial policy.
+% "What kind of policy? Optimal policy?"
+The optimal policy is still a work in progress,
+so I'll focus on my counterfactual exercise.
+I relax land use regulations in two large, skilled cities---New York and San
+Francisco---which reduces the congestion elasticity in each one, thereby
+making it cheaper for both cities to support larger populations.
+% "And what do you find?"
+I find that, along the new balanced growth path, both cities are larger and more
+skilled, with New York especially so.
+% "What's the mechanism?"
+This is not primarily the result of skill-biased migration, though, as if the
+brain hubs simply syphoned off skilled workers from other cities more than they
+did before. Instead, the rate of human capital accumulation in both cities
+increases, meaning that the spatial policy helps produce a larger stock of
+skilled workers overall.
+% "What's the headline number that I should take away?"
+Ultimately, I find that the aggregate growth rate for the entire economy
+increases by 13 basis points in response to the policy.
+
+%------------------------------- Interview Q's --------------------------------%
+
+\newpage
+\textbf{Most common questions about general fit}
+\vspace{-2ex}
+\begin{itemize}
+    \item \textbf{What would you teach?}
+    At the undergraduate level, I feel equipped to teach anything, but I would
+    most like to teach macro courses in the core sequence and field courses in
+    trade, spatial, and growth. At the graduate level, I could teach in the core
+    macro sequence and field courses in trade, spatial, and growth.
+    \item \textbf{What would the syllabus be for your second-year graduate course?}
+    Well, I would want to coordinate with others in the department to minimize
+    overlap, but one option I'm excited about would be to construct a course at
+    the intersection of trade and spatial economics around the gravity model.
+    Two keystone papers would be Allen, Arkolakis, \& Takahashi on universal
+    gravity and Redding \& Rossi-Hansberg on quantitative spatial models, but
+    then you could cover a bunch of papers at different spatial scales.
+\end{itemize}
+
+\end{document}

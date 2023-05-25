@@ -1,0 +1,344 @@
+\documentclass[margin,line]{res}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,urlcolor=blue}
+\hypersetup{
+	pdftex,
+    pdfauthor={},               % author
+    colorlinks=true,            % false: boxed links; true: colored links
+    linkcolor=red,              % color of internal links
+    citecolor=black,            % color of links to bibliography
+    urlcolor=blue               % color of external links
+}
+
+\oddsidemargin=-.5in
+\evensidemargin=-.5in
+\textwidth=6.0in
+\itemsep=0in
+\parsep=0in
+% if using pdflatex:
+\setlength{\pdfpagewidth}{\paperwidth}
+\setlength{\pdfpageheight}{\paperheight}
+
+\newenvironment{list0}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.0in}}}{\end{list}}
+
+\newenvironment{listtab}{
+\begin{list}{$\bullet$}{%
+    \setlength{\itemsep}{0in}
+    \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+    \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+    \setlength{\leftmargin}{0.075in}}}{\end{list}}
+
+\newenvironment{list1}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+\input{jmIDs.tex}
+
+%------------------------------------------------------------------------------%
+
+\begin{document}
+
+\name{\fullname \hfill{} {\small\normalfont Updated: \today} \hspace{6.5em} \vspace*{.1in}}
+
+\begin{resume}
+
+%------------------------------------------------------------------------------%
+
+\section{\sc Contact Information}
+\vspace{.05in}
+\begin{tabular}{@{}p{2in}p{4in}}
+University of Chicago & \myemail \\
+Department of Economics & \myphone \\
+1126 E 59 Street & \mywebsite \\
+Chicago, IL 60637 USA & \\
+\end{tabular}
+
+%------------------------------------------------------------------------------%
+
+\section{\sc Personal}
+\begin{tabular}{@{}ll}
+    Citizenship & \mycitizenship \\
+    Date of birth & \myDOB
+\end{tabular}
+
+%------------------------------------------------------------------------------%
+
+\section{\sc Research Fields}
+\capfieldlist
+
+%------------------------------------------------------------------------------%
+
+\section{\sc Education}
+\textbf{University of Chicago}, Chicago, Illinois USA
+\vspace*{-2mm}
+
+\begin{tabular}{ll}
+    Ph.D. in Economics & 2017 -- 2023 (expected) \\
+    M.A. in Economics & 2019 \\
+\end{tabular}
+\vspace*{.1in}
+\begin{list0}
+    \item[] {\sc Placement} \\
+    \vspace*{-2mm}
+    \begin{list1}
+        \item[] \textbf{Co-directors}:
+        Ufuk Akcigit,
+        \url{uakcigit@uchicago.edu},
+        +1 (773) 702-0433
+        \item[] \phantom{\textbf{Co-directors}:}
+        Manasi Deshpande,
+        \url{mdeshpande@uchicago.edu},
+        +1 (773) 702-8260
+        \item[] \textbf{Coordinator}:
+        Kathryn Falzareno,
+        \url{kfalzareno@uchicago.edu},
+        +1 (773) 702-3026
+    \end{list1}
+    \vspace*{.09in}
+    \item[] {\sc References} \\
+    \vspace*{-2mm}
+    \begin{list1}
+        \item[]
+        \begin{tabular}{@{}p{3in}p{3in}}
+            Esteban Rossi-Hansberg (Chair) & Jonathan I. Dingel \\
+            Glen A. Lloyd Distinguished Service Professor & Associate Professor \\
+            University of Chicago & Chicago Booth \\
+            \url{rossihansberg@uchicago.edu} & \url{jdingel@chicagobooth.edu} \\
+            +1 (773) 834-5240 & +1 (773) 834-5458 \\
+            & \\
+            Fernando Alvarez & Felix Tintelnot \\
+            Charles F. Grey Distinguished Service Professor & Associate Professor \\
+            University of Chicago & University of Chicago \\
+            \url{f-alvarez1@uchicago.edu} & \url{tintelnot@uchicago.edu} \\
+            +1 (773) 702-4412 & +1 (773) 702-3478
+        \end{tabular}
+    \end{list1}
+\end{list0}
+
+\textbf{Duke University}, Durham, North Carolina USA\\
+\vspace*{-.1in}
+\begin{listtab}
+    \item[] B.Sc. in Economics (High Distinction), B.A. in Mathematics, \emph{Summa Cum Laude}, 2017
+\end{listtab}
+
+%------------------------------------------------------------------------------%
+
+% \section{\sc Publications}
+
+%------------------------------------------------------------------------------%
+
+\section{\sc Working Papers}
+\begin{list0}
+    \item[] ``A Dynamic Spatial Knowledge Economy'' (\textbf{Job Market Paper})
+    \vspace*{2mm}
+    \begin{list1}
+        \item[] % Abstract
+        \noindent
+        Cities have long been thought to drive economic growth. Despite this, analyses
+        of spatial policies have largely ignored the effects of such policies on growth.
+        In this paper, I develop a spatial endogenous growth model in which
+        heterogeneous agents make forward-looking migration decisions and
+        human capital investments over the life cycle.
+        Local externalities in the human capital investment technology
+        drive both agglomeration and growth.
+        I show that, along a balanced growth path, the growth rate depends on the spatial
+        distribution of human capital, making it sensitive to spatial policies.
+        I calibrate the model to data on U.S. metropolitan areas
+        and show that it can rationalize the faster wage growth of workers in big cities,
+        as well as other key patterns in life-cycle wage profiles, migration decisions,
+        and city characteristics.
+        Because workers accumulate human capital at different rates depending
+        on where they live, the model provides an environment in which spatial policy
+        can not just attract skilled workers, but produce them, too.
+        I find that policies that further concentrate skilled workers in large cities
+        are growth-enhancing.
+    \end{list1}
+    \vspace*{2mm}
+    \item[]
+    \item[]
+    \item[] ``Agriculture, Trade, and the Spatial Efficiency of Global Water Use''
+    (with \href{https://www.tammacarleton.com/}{T.~Carleton}
+    \& \href{https://www.ishannath.com/}{I.~Nath})
+    \vspace{-2mm}
+    \begin{list1}
+        \item[] Over 90\% of global water use occurs in agricultural production,
+        which is subject to two pervasive distortions: (i) incomplete property
+        rights for farmers accessing water and (ii) subsidies, taxes, and
+        tariffs affecting agricultural output. This paper combines a rich
+        collection of global geospatial data with a dynamic spatial equilibrium
+        model to quantify the impact of agricultural and trade policies on
+        regional water scarcity and welfare. In the data, we show that
+        water-intensive crops concentrate in water-abundant locations,
+        implying a strong role for comparative advantage in governing global
+        water use, though a small number of regions with very water-intensive
+        production are losing water rapidly over time. The model captures
+        production, consumption, and trade in agriculture across many countries
+        and crops, as well as the dynamic evolution of local water stocks as
+        farmers extract water from a common pool. We calibrate the model to
+        match observed patterns of agricultural production and hydrological
+        trends, and will use it to compare the existing allocation to the global
+        planner's undistorted steady state and a hypothetical scenario with no
+        international trade in agriculture.
+    \end{list1}
+\end{list0}
+
+%------------------------------------------------------------------------------%
+
+\section{\sc Work In \\ Progress}
+\begin{list0}
+    \item[] ``Does Eating Local Reduce Emissions?''
+    (with \href{https://www.ishannath.com/}{I.~Nath})
+    \vspace*{2mm}
+    \begin{list1}
+        \item[] This paper examines the conventional wisdom that promoting
+        consumption of locally-produced food reduces greenhouse gas emissions.
+        We start by exploring the partial equilibrium consequences of a single
+        consumer's sourcing decisions using existing data on emissions from
+        shipping, along with a new high-resolution global spatial dataset
+        containing scientific estimates of crop-wise emissions from agricultural
+        production. Initial exploration suggests that the spatial variation in
+        production emissions from agriculture is substantial relative to the
+        emissions from shipping. Next, we will use a global model of production,
+        consumption, and trade in agriculture to investigate the general
+        equilibrium consequences of varying the level of globalization. We plan
+        to use the model to compare global agricultural emissions under existing
+        policy to a scenario that imposes autarky on all local regions, and to
+        an alternative scenario with much greater openness to trade.
+    \end{list1}
+    \vspace*{2mm}
+    \item[] ``Trade Policy and Food Security''
+    (with \href{https://www.ishannath.com/}{I.~Nath})
+    \vspace*{2mm}
+    \begin{list1}
+        \item[] This paper investigates how trade policy affects stability in
+        food supply and food prices. We show that openness to trade exerts two
+        competing forces on volatility: (i) diversifying supply across many
+        countries reduces the exposure of local consumers to domestic or
+        regional shocks and (ii) relying on imports for consumption of a
+        necessary good creates vulnerability to geopolitical risk or trade
+        barriers erected in response to instability. We use global panel data on
+        agricultural production, prices, trade flows, trade policy, and weather
+        to examine how trade barriers respond endogenously to agricultural
+        supply shocks and explore the domestic and international transmission of
+        price fluctuations. We plan to use a model of production, consumption,
+        and trade in agriculture to study optimal trade policy for promoting
+        food supply stability in countries facing endogenous trade barriers and
+        stochastic shocks to productivity.
+    \end{list1}
+    \vspace*{2mm}
+    \item[] ``Predicting Trade Elasticities in the US-China Trade War''
+    (with \href{http://www.jdingel.com/}{J.~Dingel},
+    \href{https://www.sebastianheise.com/}{S.~Heise}, \&
+    \href{https://www.felix-tintelnot.com/}{F.~Tintelnot})
+\end{list0}
+
+%------------------------------------------------------------------------------%
+
+\section{\sc Presentations}
+
+\begin{list0}
+    \item[\phantom{2022}\textbf{2022}] LACEA LAMES, BFI Coase Project,
+    UChicago (Capital Theory, Trade \& Spatial working group, Applied Macro Theory lunch)
+    \item[\phantom{2021}\textbf{2021}]
+    UChicago (Capital Theory, Trade \& Spatial working group, Applied Macro Theory lunch)
+\end{list0}
+% \vspace*{-.25in}
+
+%------------------------------------------------------------------------------%
+
+\section{\sc Research Assistance}
+\textbf{University of Chicago}
+\vspace*{-2mm}
+
+\begin{tabular}{ll}
+    J.~Dingel and F.~Tintelnot & Jan. 2019 -- June 2020 \\
+    H.~Uhlig and D.~Kr{\"u}ger & Feb. 2019 -- June 2020 \\
+    B.~Neiman and J.~Vavra & May 2019 -- Nov. 2019
+\end{tabular}
+
+%------------------------------------------------------------------------------%
+
+\newpage
+\section{\sc Teaching}
+\textbf{University of Chicago}
+\vspace*{-2mm}
+
+\begin{tabular}{llll}
+    TA & Spatial Economics (PhD) & E.~Rossi-Hansberg & Winter 2022 \\
+    TA & Theory of Income III (PhD) & F.~Alvarez & Spring 2021 \\
+    TA & International Trade (U) & F.~Tintelnot & Winter 2021 \\
+    TA & Managing the Firm in the Global Economy (MBA) & J.~Dingel & Winter 2020--21 \\
+    TA & Financial Markets in the Macroeconomy (PhD) & V.~Guerrieri & Spring 2020 \\
+    TA & International Financial Policy (MBA) & R.~Kekre & Spring 2020
+\end{tabular}
+
+\textbf{Duke University}
+\vspace*{-2mm}
+
+\begin{tabular}{llll}
+    TA & Intermediate Macroeconomics (U) & M.~Connolly & Fall 2016--Spring 2017 \\
+    \phantom{TA} & \phantom{Managing the Firm in the Global Economy (MBA)} & \phantom{E.~Rossi-Hansberg} & \phantom{Winter 2020--21}
+\end{tabular}
+
+\vspace{-3mm}
+
+%------------------------------------------------------------------------------%
+
+\section{\sc Honors and Awards}
+
+\begin{tabular}{@{}lll}
+    Margaret G. Reid Dissertation Fellowship & University of Chicago Economics Department & 2022--23 \\
+    Data Acquisition Grant & University of Chicago Economics Department & 2019 \\
+    Travel Grant & Princeton Initiative: Macro, Money and Finance & 2019 \\
+    Neubauer Fellowship & University of Chicago Social Sciences Division & 2017--22 \\
+    Davies Fellowship & Duke University Economics Department & 2016 \\
+    Student Marshal & Duke University & 2016 \\
+    Phi Beta Kappa & Duke University & 2016 \\
+\end{tabular}
+
+%------------------------------------------------------------------------------%
+
+\section{\sc Service}
+
+\begin{tabular}{@{}lll}
+    Cohort Representative & 2020--22 \\
+    Coordinator: Trade \& Spatial working group & 2020--21 \\
+    Peer Mentor & 2019--21 \\
+    Coordinator: Applied Macro Theory lunch & 2019--20 \\
+\end{tabular}
+
+\vspace*{-1.5mm}
+
+%------------------------------------------------------------------------------%
+
+\section{\sc Referee}
+\begin{list0}
+    \item[]
+    \textit{Journal of Political Economy},
+    \textit{Review of Economics and Statistics}
+\end{list0}
+
+%------------------------------------------------------------------------------%
+
+\section{\sc Technical \\ Skills}
+\begin{list0}
+    \item[] Python, Julia, Matlab, Stata, \LaTeX, Unix, Make
+\end{list0}
+
+\end{resume}
+\end{document}

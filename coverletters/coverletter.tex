@@ -1,0 +1,159 @@
+\documentclass{article}
+
+\usepackage[margin=1.15in]{geometry}
+\usepackage{fancyhdr,graphicx,xcolor,hyperref,wasysym}
+\usepackage[misc]{ifsym}
+\definecolor{ucmaroon}{rgb}{0.50,0,0}
+\definecolor{alert}{HTML}{EB811B}
+\hypersetup{
+    pdfauthor={},               % author
+    colorlinks=true,            % false: boxed links; true: colored links
+    linkcolor=ucmaroon,
+    urlcolor=ucmaroon           % color of external links
+}
+
+\fancypagestyle{firstpage}{%
+  \fancyhf{}% Clear header/footer
+  \renewcommand{\headrulewidth}{0pt}%
+  \renewcommand{\footrulewidth}{1pt}%
+  % Add more detail here if needed
+}
+\fancypagestyle{otherpages}{%
+  \fancyhf{}% Clear header/footer
+  \renewcommand{\headrulewidth}{1pt}%
+  \renewcommand{\footrulewidth}{1pt}%
+  % Add more detail here if needed
+}
+
+\AtBeginDocument{\thispagestyle{firstpage}}
+\pagestyle{otherpages}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2ex}
+
+\input{jmIDs.tex}
+
+%------------------------------------------------------------------------------%
+%                               teaching, by type                              %
+%------------------------------------------------------------------------------%
+
+\newcommand{\standardteach}{In my teaching, my goal is to train capable thinkers and
+researchers, so I emphasize learning by doing. My assignments involve tweaking
+model assumptions, finding and wrangling raw data, and writing in clear, concise
+prose. At the undergraduate and graduate levels, I am prepared to teach core
+courses in macroeconomics and field courses in international trade, spatial
+economics, and economic growth.}
+\newcommand{\generalteach}{In my teaching, my goal is to train capable thinkers and
+researchers, so I emphasize learning by doing. My assignments involve tweaking
+model assumptions, finding and wrangling raw data, and writing in clear, concise
+prose. I am prepared to teach core courses in macroeconomics and field courses
+in international trade, spatial economics, and economic growth to all levels of students.}
+\newcommand{\MBA}{In my teaching, my goal is to train capable thinkers and
+researchers, so I emphasize learning by doing. My assignments involve tweaking
+model assumptions, finding and wrangling raw data, and writing in clear, concise
+prose. At the MBA and Ph.D. levels, I am prepared to teach core
+courses in macroeconomics and field courses in international trade, spatial
+economics, and economic growth.}
+\newcommand{\LAC}{In my teaching, my goal is to train capable thinkers and
+researchers, so I emphasize learning by doing. My assignments involve tweaking
+model assumptions, finding and wrangling raw data, and writing in clear, concise
+prose. At the undergraduate level, I am prepared to teach core
+courses in macroeconomics and field courses in international trade, spatial
+economics, and economic growth. I am particularly excited to teach within the
+context of a liberal arts curriculum because it will afford me the chance to
+collaborate with students and faculty across traditional academic boundaries
+and contribute wholistically to the life of the mind.}
+
+%------------------------------------------------------------------------------%
+%                                  job details                                 %
+%------------------------------------------------------------------------------%
+
+\input{currentjob.tex}
+
+%------------------------------------------------------------------------------%
+%                                   main text                                  %
+%------------------------------------------------------------------------------%
+
+\begin{document}
+
+\vspace*{\dimexpr-\headsep-\headheight-1pt}
+
+\includegraphics[width=2.5in]{uchicagologo.png}
+\vspace{-6mm}
+
+\rule{\linewidth}{1pt}
+
+\medskip
+
+\hfill
+\begin{tabular}{ l @{} }
+  \today \\[12pt] % Date
+  University of Chicago\\
+  Department of Economics\\
+  1126 E 59 Street\\
+  Chicago, IL 60637 USA\\[6pt]
+  \phone~\myphone \\
+  \Letter~\myemail
+\end{tabular}
+
+\medskip
+
+\salutation
+
+\bigskip
+
+I am writing to apply for the position of \jobtitle~at \institution.
+I expect to complete my Ph.D. in Economics at the University of Chicago in Spring 2023.
+My primary advisor is $<$Committee Chair$>$, and my fields of interest are \fields.
+\fit
+
+%------------------------------------------------------------------------------%
+
+My research agenda addresses \onesenID.
+% adapted JMP abstract
+In my job market paper, I develop a spatial endogenous growth model to illustrate
+how cities help drive aggregate growth by fostering the accumulation of human capital.
+I use recent evidence on the dynamic component of the city size wage premium
+to quantify the strength of local externalities in the accumulation process.
+Because workers accumulate human capital over time at different rates depending
+on where they live, the model provides an environment in which spatial policy
+can not just attract skilled workers, but produce them, too.
+I find that policies that further concentrate skilled workers in large cities
+are growth-enhancing.
+% rework the transition sentence from your research statement to
+In my other work, I use dynamic spatial models to address questions in environmental
+economics, such as how agricultural and trade policies affect regional water
+scarcity and welfare in a world with weak property rights over water.
+
+%------------------------------------------------------------------------------%
+
+\teaching
+
+%------------------------------------------------------------------------------%
+
+\desire
+
+%------------------------------------------------------------------------------%
+
+Please find my application materials enclosed, along with recommendation letters
+from Professors
+$<$Committee Chair$>$,
+\fourthLOR
+$<$Committee Member (alphabetical)$>$, and
+$<$Committee Member (alphabetical)$>$.
+You can find updated and additional materials on my website: \mywebsite.
+
+Thank you for taking the time to consider my application.
+I look forward to hearing from you soon.
+
+% Make sure cover letter stays on one page by adjusting the skip sizes as needed
+\customCLskip
+
+Sincerely,
+
+\smallskip
+
+\myname
+% \fullname
+
+\end{document}

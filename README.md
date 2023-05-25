@@ -1,107 +1,103 @@
-# Job Market Hacker
+# jmpacket
 
-A tool to create application packets for the academic Economics Job Market.
+*Disclaimer*: I compiled this repository in the spring after my job market season. It exists to help other UChicago econ PhDs prepare for the market. If you find a bug or think of an improvement, feel free to submit an issue, but please keep in mind that **I don't plan to actively maintain this repo**. That said, I'll do my best to review and merge pull requests if you're able to implement the change yourself.
 
 ---
 
-This package is designed to make it easier to apply for jobs during the Economics Job Market. With this code, you can create multiple templates for your cover letters, research statements, teaching statements, and diversity statements and inject wild cards into each letter or statement to customize them to a specific job. This code will take the LaTeX files and create a separate application folder for each job application with the information you choose.
+A typical job market packet for the academic econ market consists of the following:
 
-The package contains six files (all of these files should remain in the root directory):
+1. JMP
+2. spiel
+3. job talk
+4. CV
+5. website
+6. cover letters
+7. statements (research, teaching, DEIB)
+8. other research outputs
+9. application forms/profiles
+10. letters of recommendation
 
-- JMHacker.py
-- Jobs.xlsx
-- Cover.tex
-- Research.tex
-- Teaching.tex
-- Diversity.tex
+**This repository provides code and templates to help you produce your spiel (#2), CV (#4), cover letters (#6), and statements (#7).** For JMP (#1) and job talk (#3) templates, see my [repository](https://github.com/levicrews/crews-latex) of LaTeX style files. For a website (#5) template, see my [fork](https://github.com/levicrews/academic-website) of the Hugo Academic template.
 
-Jobs.xlsx is an Excel spreadsheet where you will collect all of your job information.
-Cover.tex is an example cover letter tex file for your job applications.
-Research.tex is an example research statement tex file.
-Teaching.tex is an example teaching statement tex file.
-Diversity.tex is an example diversity statement tex file.
-JMHacker.py is the python file that will compile all tex files, read the information in the Jobs spreadsheet, and create the application folders.
+Here's an annotated file tree for this repository:
 
+```
+.
+├── coverletters
+│   ├── compile.py                                    * script to compile one customized cover letter for each job
+│   ├── coverletter.tex
+│   ├── jobs.csv                                      * list of jobs and their attributes to insert in cover letters
+│   └── uchicagologo.png
+├── cv
+│   ├── <lastname>_cv.pdf
+│   ├── <lastname>_cv.tex                             * a nicer CV
+│   ├── <lastname>_cv-uchicagoformat.docx             * mandatory UChicago CV template
+│   ├── <lastname>_cv-uchicagoformat.pdf
+│   └── res.cls                                       * class for a nicer CV
+├── jmIDs.tex                                         * LaTeX commands for your repeated ID elements (to be symlinked)
+├── jmstatement.cls                                   * common class for your statements and spiel (to be symlinked)
+├── panel.pdf                                         * slides with advice for the job market (UChicago, May 2023)
+├── spiel                                             * interview spiel
+│   ├── <lastname>_spiel.pdf
+│   └── <lastname>_spiel.tex
+├── statement_deib                                    * Diversity, Equity, Inclusion, & Belonging statement
+│   ├── <lastname>_deib.pdf
+│   └── <lastname>_deib.tex
+│   └── notes_deib.org
+├── statement_research                                * research statement
+│   ├── <lastname>_research.pdf
+│   └── <lastname>_research.tex
+└── statement_teaching                                * teaching statement (experience + philosophy)
+    ├── <lastname>_teach.pdf
+    └── <lastname>_teach.tex
+    └── notes_teach.org
+```
 
-### Dependencies
+## Getting started
 
-In order to use this code, you will need to install some dependencies.
+1. **Clone this repository**. If you don't want to use Git, you can download the repository as a ZIP file.
 
-1. Python
-   I use Python 3.6 but you may be able to use other versions successfully. The following packages should be installed through pip (e.g 'pip install PyPDF2' at the command line or within Anaconda or Jupyter)
-   - `os`
-   - `glob`
-   - `pandas`
-   - `numpy`
-   - `PyPDF2`
-   - `shutil`
+2. **Install the dependencies**. Almost surely your machine already has LaTeX and Python installed. If not, install them. For Python, I recommend downloading [Anaconda](https://www.anaconda.com/). You can find the necessary LaTeX and Python packages in the preambles of the `.tex`/`.cls` files and `compile.py`, respectively.
 
-1. MikTeX (or other LaTeX compiler—see http://sachaepskamp.com/wp-content/uploads/2011/10/Install.pdf)
-   `pdflatex` should be accessible via your PATH.
-   Packages used are (some of these aren't required but are in the example files):
-    - `geometry`
-    - `setspace`
-    - `placeins`
-    - `babel`
-    - `inputenc`
-    - `fancyhdr`
-    - `hyperref`
-    - `import`
-    - `datatool`
-    - `ifthen`
-    - `blindtext`
+3. **Symlink** (`ln -s`) the class `jmstatement.cls` and the command file `jmIDs.tex` into the relevant subdirectories:
 
-1. Microsoft Excel
+   - `/spiel`
+   - `/statement_deib`
+   - `/statement_research`
+   - `/statement_teaching`
+   - only for `jmIDs.tex`:
+     - `/cv`
+     - `/coverletters`
 
+4. **Fill in `jmIDs.tex` and customize `jmstatement.cls`**. Fill in the commands for your name, your fields, your one-sentence ID, and your three-sentence ID (refer to `panel.pdf` if you don't know what I'm talking about). Change the margins, link colors, or whatever else. *Note: Edit the files in the root directory*. Your changes will automatically propagate to the subdirectories through the symlinks.
 
-### Getting Started
+## CV, spiel, and statements
 
-1. To begin, open and explore the tex documents to familiarize yourself with the structure. The tex file will read information from your job spreadsheet and loop over all of the jobs you wish to compile to create a unique PDF file for each application. For example, in the Cover.tex there are various wild card variables that will be placed into the corresponding section of the cover letter. Additionally, you can create alternate versions of a section of a statement/letter (e.g. econ_academic, government, postdoc, etc). Also notice there are 'Bonus' wild cards that you can inject a unique sentence or paragraph into the statement/letter.
+- **Fill in your CV**. The UChicago placement committee will insist that you make a version using their `.docx` template so they can include it in the department's packet. I think it looks awful and I hate Microsoft Word. For your own applications and website, I recommend producing a nicer CV in LaTeX using the `res.cls` class.
 
-2. Open the Jobs Spreadsheet and explore the columns. These columns correspond to the wild cards in the tex files. You can begin to add new rows with new jobs but it is best to compile with only the sample jobs so that you know the code works. It is also recommended you keep the sample jobs in the spreadsheet so that the python file always has a job to work on. The Excel file is pre-populated with 29 columns that are used as inputs in the various tex files:
+- At this point, you can **write your spiel or any of your statements**, since none of them will be customized for individual job postings. The corresponding `.tex` files are peppered with comments to help you adapt my statements and spiel into your own. For the DEIB and teaching statements, I've included additional files of notes pulled from other sources.
 
-   | Variable | Description |
-   |----------|-------------|
-   | `Name` | The name of the department and university for the cover letter (Use `\\` for line breaks) |
-   | `Address` | Street address for cover letter (Use `\\` for line breaks) |
-   | `City` | City for cover letter |
-   | `State` | State for cover letter |
-   | `Zip` | Zip code for cover letter |
-   | `Country` | Country for cover letter (optional) |
-   | `Submitted` | Leave blank in order to build the application folder. Mark with 'Yes' once this application is submitted and the folder will be move to the Submitted folder |
-   | `Complete` | Mark with 'Yes' when the job details are completed so that the python code will process this job. Leave blank otherwise. |
-   | `Deadline` | Enter the date of the deadline in MM/DD/YYYY format |
-   | `Rolling` | Mark with 'Yes' if this job has a rolling deadline (will be sorted to the top of Applications folder) |
-   | `CoverLetterCat` | Denotes which version of the cover letter to use for this application (More instructions in Cover.tex) |
-   | `Position` | Title of the job position (will be added verbatim in cover letter) |
-   | `Contents` | list of application materials that will be included (will be added verbatim in cover letter - see Cover.tex for context) |
-   | `Letters` | provide a list of letter writers (will be added verbatim in cover letter) |
-   | `LettersFormat` | Prefix to letter writers (will be added verbatim in cover letter - see Cover.tex for context) |
-   | `CoverBonusGeneral` | General statement to add to cover letter (will be added verbatim in cover letter - see Cover.tex for context) |
-   | `CoverBonusResearch` | General statement to add to the research section of cover letter (will be added verbatim in cover letter - see Cover.tex for context) |
-   | `CoverBonusTeaching` | General statement to add to the teaching section of cover letter (will be added verbatim in cover letter - see Cover.tex for context) |
-   | `Posted` | Where the job postin g was found (will be added verbatim in cover letter - see Cover.tex for context) |
-   | `Interview` | Availability for interviewing (will be added verbatim in cover letter - see Cover.tex for context) |
-   | `Addressee` | Who the letter will be addressed to (will be added verbatim in cover letter) |
-   | `TeachingStatementCat` | Categorize the teaching statement for Teaching.tex (leave blank to skip document) |
-   | `TeachingBonus` | Additional space for sentence/paragraph at the end of teaching statement in Teaching.tex |
-   | `ResearchStatementCat` | Categorize the research statement for Research.tex (leave blank to skip document) |
-   | `ResearchBonus` | Additional space for sentence/paragraph at the end of research statement in Research.tex |
-   | `DiversityStatementCat` | Categorize the diversity statement for Diversity.tex (leave blank to skip document) |
-   | `DiversityBonus` | Additional space for sentence/paragraph at the end of diversity statement in Diversity.tex |
-   | `SecondPaper` | Filename for additional paper/transcript/etc to be added to application folder (store in {root}/Misc folder) |
-   | `ThirdPaper` | Filename for additional paper/transcript/etc to be added to application folder (store in {root}/Misc folder) |
+## Cover letters
 
-   You can add any new wild card to the program by adding a column to the jobs spreadsheet and then invoking the wild card in the appropriate tex file.
+1. **Gather job postings**. At UChicago, you'll be given a Google Sheet that you and your committee (read: their assistants) will use to track your letters of recommendation for each job posting. The sheet will have spots to list the sector, institution, department, and job title for each posting. Most academic postings for the U.S. will be on the AEA's [JOE](https://www.aeaweb.org/joe/listings) or on [EJM](https://econjobmarket.org/), but you'll likely need to search more widely, too. Consider using Benjamin Vatter's [JobMarketTracker](https://github.com/benjaminvatterj/JobMarketTracker).
 
-3. Customize the JMHacker.py file:
-   Adjust the root directory to the location of the source files
-   Adjust the last name variable
-   Set the file location for the CV pdf
-   Set the file location for the job market paper pdf
+2. **Fill in `coverletters/jobs.csv`**. Open `jobs.csv` and explore the example entries. The CSV comes with nine columns (delimited by pipes `|`), each of which corresponds to a LaTeX command used in `coverletter.tex` or a variable in `compile.py`.
 
-4. Run the JMHacker.py file to generate the sample application folders and the Job_export.csv. You must have all application folders closed before running the py file. Otherwise you will get an error when trying to move/delete folders.
+   | Variable       | Description                                                     |
+   |----------------|-----------------------------------------------------------------|
+   | `uploaded`     | Boolean indicating whether you've uploaded the application      |
+   | `uniqueID`     | ID for the posting to name the PDF `coverletter_<uniqueID>.pdf` |
+   | `salutation`   | How you want to address the recipient                           |
+   | `jobtitle`     | "I am writing to apply for the position of `jobtitle` at ..."   |
+   | `institution`  | "... the position of `jobtitle` at `institution`."              |
+   | `fit`          | Brief, general statement why you're a good fit for the position |
+   | `teaching`     | Select which description of your teaching to include (if any)   |
+   | `customCLskip` | Size of vertical skip to ensure letter stays on one page        |
+   | `fourthLOR`    | Name of fourth letter writer (some postings have max of three)  |
+   | `desire`       | Specific reason you want that job (e.g., location constraints)  |
 
-5. Run JMHacker.py as needed to generate new application files, move newly submitted applications to the Submitted folder, and update any documents. Note that if you change the name or deadline of an application, the old folder will remain and a new folder will be created. You will need to manually delete any folder that doesn't have a matching name/deadline combination in the spreadsheet.
+   Add entries by copying over postings from your Google Sheet and filling in the remaining columns. You can add any new LaTeX command to the program by adding a column to the jobs spreadsheet and then invoking the LaTeX command in the appropriate spot in `coverletter.tex`. Once you've uploaded a cover letter to the relevant application portal, mark the `uploaded` column as `True` to prevent the script from overwriting the PDF.
 
+3. **Generate example letters by running `compile.py`**. You'll generate ~25 letters that I sent to various academic positions and public sector research jobs. I suggest you create and move them into a subdirectory called `/examples` to store them for easy reference later.
 
+4. **Customize the `compile.py` script**. The script is pretty simple, but you may want to change the default filepaths, for instance. It may not be the most robust, either, so don't be surprised if you need to fix weird edge cases.

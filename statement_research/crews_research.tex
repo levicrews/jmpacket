@@ -1,0 +1,132 @@
+\documentclass{jmstatement}
+
+\begin{document}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\bfseries\scshape \myname}
+\fancyhead[R]{\bfseries\scshape Research Statement}
+\fancyfoot[C]{\thepage}
+
+\input{jmIDs.tex}
+
+% A good research statement can be quite formulaic:
+% - three-sentence ID
+% - one paragraph that just rephrases your JMP abstract
+% - one paragraph with future work from your JMP conclusion
+% - one paragraph each for your other projects
+
+% Make sure to replace the path to your .bib file below!
+
+\threesenID
+
+% This is just the abstract of my JMP!
+For example, although cities have long been thought to drive economic growth, analyses
+of spatial policies have largely ignored the effects of such policies on growth.
+In my job market paper, \textbf{``A Dynamic Spatial Knowledge Economy''},
+I develop a spatial endogenous growth model in which
+heterogeneous agents make forward-looking migration decisions and
+human capital investments over the life cycle.
+Local externalities in the human capital investment technology
+drive both agglomeration and growth.
+I show that, along a balanced growth path, the growth rate depends on the spatial
+distribution of human capital, making it sensitive to spatial policies.
+I calibrate the model to data on U.S. metropolitan areas
+and show that it can rationalize the faster wage growth of workers in big cities,
+as well as other key patterns in life-cycle wage profiles, migration decisions,
+and city characteristics.
+Because workers accumulate human capital at different rates depending
+on where they live, the model provides an environment in which spatial policy
+can not just attract skilled workers, but produce them, too.
+I find that policies that further concentrate skilled workers in large cities
+are growth-enhancing.
+
+% Then I pull the "future work" from the conclusion of my JMP.
+I am currently working
+on additional applications and extensions of this framework.
+One application is an ex-ante policy evaluation of
+the \$11 billion regional technology hubs program funded through
+the American Rescue Plan and the CHIPS and Science Act, which aims to create
+``regional growth clusters" outside of the existing coastal hubs.
+The results of my job market paper, however, suggest that dispersing skilled labor
+acoss more, smaller clusters may actually be counterproductive.
+In one extension, I introduce a consumption-savings choice with liquidity constraints
+so that some workers ``borrow'' by moving to a cheaper location with slower
+wage growth \citep{BilalRossi-Hansberg2021}.
+The model provides a channel through which credit availability would have
+lasting effects on lifetime human capital accumulation and, thus, aggregate growth.
+In another extension,
+I am working on how to solve for transitions, which I will then use to study
+optimal placed-based development policies in contexts outside of the U.S.
+\citep{DurantonVenables2018}.
+
+% Now I pivot to my other ongoing projects, starting with the one that's furthest along.
+
+% This first sentence is all I need to bridge from my JMP to my other projects.
+In the rest of my ongoing research, I apply dynamic spatial models to questions
+in environmental, agricultural, and resource economics.
+% Abstract for my other working paper.
+Over 90\% of global water use occurs in agricultural production,
+which is subject to two pervasive distortions: (i) incomplete property
+rights for farmers accessing water and (ii) subsidies, taxes, and
+tariffs affecting agricultural output.
+In \textbf{``Agriculture, Trade, and the Spatial Efficiency of Global Water Use''},
+I work with Tamma Carleton and Ishan Nath to combine a rich
+collection of global geospatial data with a dynamic spatial equilibrium
+model in order to quantify the impact of agricultural and trade policies on
+regional water scarcity and welfare. In the data, we show that
+water-intensive crops concentrate in water-abundant locations,
+implying a strong role for comparative advantage in governing global
+water use, though a small number of regions with very water-intensive
+production are losing water rapidly over time. The model captures
+production, consumption, and trade in agriculture across many countries
+and crops, as well as the dynamic evolution of local water stocks as
+farmers extract water from a common pool. We calibrate the model to
+match observed patterns of agricultural production and hydrological
+trends, and will use it to compare the existing allocation to the global
+planner's undistorted steady state and a hypothetical scenario with no
+international trade in agriculture.
+
+% Abstract for work-in-progress #1
+In our paper \textbf{``Does Eating Local Reduce Emissions''}, Ishan Nath and I
+examine the conventional wisdom that promoting
+consumption of locally-produced food reduces greenhouse gas emissions.
+We start by exploring the partial equilibrium consequences of a single
+consumer's sourcing decisions using existing data on emissions from
+shipping, along with a new high-resolution global spatial dataset
+containing scientific estimates of crop-wise emissions from agricultural
+production. Initial exploration suggests that the spatial variation in
+production emissions from agriculture is substantial relative to the
+emissions from shipping. Next, we will use a global model of production,
+consumption, and trade in agriculture to investigate the general
+equilibrium consequences of varying the level of globalization. We plan
+to use the model to compare global agricultural emissions under existing
+policy to a scenario that imposes autarky on all local regions, and to
+an alternative scenario with much greater openness to trade.
+
+% Abstract for work-in-progress #2
+In another paper \textbf{``Trade Policy and Food Security''}, Ishan Nath and I
+investigate how trade policy affects stability in
+food supply and food prices. We show that openness to trade exerts two
+competing forces on volatility: (i) diversifying supply across many
+countries reduces the exposure of local consumers to domestic or
+regional shocks and (ii) relying on imports for consumption of a
+necessary good creates vulnerability to geopolitical risk or trade
+barriers erected in response to instability. We use global panel data on
+agricultural production, prices, trade flows, trade policy, and weather
+to examine how trade barriers respond endogenously to agricultural
+supply shocks and explore the domestic and international transmission of
+price fluctuations. We plan to use a model of production, consumption,
+and trade in agriculture to study optimal trade policy for promoting
+food supply stability in countries facing endogenous trade barriers and
+stochastic shocks to productivity.
+
+% You don't even need a conclusion!
+
+\begingroup
+\renewcommand{\section}[2]{}%
+\bibliographystyle{lgc-jpe}
+\bibliography{../../../Dropbox/crewsbib/crewsbib}
+\endgroup
+
+\end{document}

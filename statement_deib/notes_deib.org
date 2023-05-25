@@ -1,0 +1,32 @@
+* advice from UChicago GRAD
+
+Diversity Statements are 1- to 2-page documents that address your past or potential contributions to academic diversity, inclusion, and equity. These statements typically address both your own learning and development related to diversity as well as others' learning and development (achieved as a result of your research, teaching, or service). Diversity statements are typically written in first-person point of view, and they provide evidence of reflection as well as concrete examples.
+
+* details from UCLA
+
+- Equity :: treating likes alike + not ignoring differences when they matter
+- Diversity :: Refers to the variety of personal experiences, values, and worldviews that arise from differences of culture and circumstance. Such differences include race, ethnicity, gender, age, religion, language, abilities/disabilities, sexual orientation, gender identity, socioeconomic status, and geographic region, and more.
+- Inclusion :: Ensuring all feel welcomed, respected, and valued
+- What counts as a contribution? ::
+  - in teaching :: Effectiveness in creating an academic environment that is open and encouraging to all students, including development of particularly effective strategies for the educational advancement of students in various underrepresented groups
+  - in research :: Evidence of a productive and creative mind should be sought in the candidate's published research or recognized artistic production in original architectural or engineering or the like. ... [C]ontributions by faculty members to the professional literature or to the advancement of professional practice or professional education, /including contributions to the advancement of equitable access and diversity in education/, should be judged creative work when they present new ideas or original scholarly research.
+  - in service :: Contributions to student welfare through service on student-faculty committees and as advisers to student organizations should be recognized as evidence, as should contributions furthering diversity and equal opportunity within the University through participation in such activities as recruitment, retention, and mentoring of scholars and students
+
+* Cornell [[https://facultydevelopment.cornell.edu/information-for-faculty-candidates/][instructions]]
+
+The statement gives candidates an opportunity to describe how they currently or potentially promote diversity, equity and inclusion through their teaching, research and service. Rubric available [[https://facultydevelopment.cornell.edu/rubric-assessing-candidate-on-diversity-equity-and-inclusion/][here]].
+
+Examples:
+- Creating programs that provide access and a pathway to higher education for groups traditionally underrepresented in a field or for those who have faced barriers;
+- Enhancing the learning experience in the classroom, lab and field for all students through exposure to new perspectives on cultures, beliefs and practices;
+- Describing how the candidate's teaching engages or addresses barriers to full participation in the student educational experience;
+- Explaining how the candidate's research, scholarship or creative activities contribute to understanding the barriers experienced by marginalized groups;
+- Offering research opportunities for individuals historically excluded from disciplines on the basis of their background (demographic, socio-economic status, ability, etc.);
+- Mentoring and advising students and junior colleagues to enhance opportunities for underrepresented students and junior faculty to succeed in the academy; and
+- Committing to public engagement with organizations or community groups serving marginalized populations or extending opportunities to disadvantaged people
+
+* [[https://ofew.berkeley.edu/recruitment/contributions-diversity/rubric-assessing-candidate-contributions-diversity-equity][Berkeley DEIB rubric]]
+
+* final tips
+
+Some departments will force you to keep this statement to 1 page, so it's best to restrict yourself to 1 page.
