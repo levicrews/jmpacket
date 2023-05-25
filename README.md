@@ -24,30 +24,30 @@ Here's an annotated file tree for this repository:
 ```
 .
 ├── coverletters
-│   ├── compile.py                                    * script to compile one customized cover letter for each job
+│   ├── compile.py                              * script to compile one customized cover letter for each job
 │   ├── coverletter.tex
-│   ├── jobs.csv                                      * list of jobs and their attributes to insert in cover letters
+│   ├── jobs.csv                                * list of jobs and their attributes to insert in cover letters
 │   └── uchicagologo.png
 ├── cv
 │   ├── <lastname>_cv.pdf
-│   ├── <lastname>_cv.tex                             * a nicer CV
-│   ├── <lastname>_cv-uchicagoformat.docx             * mandatory UChicago CV template
+│   ├── <lastname>_cv.tex                       * a nicer CV
+│   ├── <lastname>_cv-uchicagoformat.docx       * mandatory UChicago CV template
 │   ├── <lastname>_cv-uchicagoformat.pdf
-│   └── res.cls                                       * class for a nicer CV
-├── jmIDs.tex                                         * LaTeX commands for your repeated ID elements (to be symlinked)
-├── jmstatement.cls                                   * common class for your statements and spiel (to be symlinked)
-├── panel.pdf                                         * slides with advice for the job market (UChicago, May 2023)
-├── spiel                                             * interview spiel
+│   └── res.cls                                 * class for a nicer CV
+├── jmIDs.tex                                   * LaTeX commands for your repeated ID elements (to be symlinked)
+├── jmstatement.cls                             * common class for your statements and spiel (to be symlinked)
+├── panel.pdf                                   * slides with advice for the job market (UChicago, May 2023)
+├── spiel                                       * interview spiel
 │   ├── <lastname>_spiel.pdf
 │   └── <lastname>_spiel.tex
-├── statement_deib                                    * Diversity, Equity, Inclusion, & Belonging statement
+├── statement_deib                              * Diversity, Equity, Inclusion, & Belonging statement
 │   ├── <lastname>_deib.pdf
 │   └── <lastname>_deib.tex
 │   └── notes_deib.org
-├── statement_research                                * research statement
+├── statement_research                          * research statement
 │   ├── <lastname>_research.pdf
 │   └── <lastname>_research.tex
-└── statement_teaching                                * teaching statement (experience + philosophy)
+└── statement_teaching                          * teaching statement (experience + philosophy)
     ├── <lastname>_teach.pdf
     └── <lastname>_teach.tex
     └── notes_teach.org
