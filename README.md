@@ -17,7 +17,7 @@ A typical job market packet for the academic econ market consists of the followi
 9. application forms/profiles
 10. letters of recommendation
 
-**This repository provides code and templates to help you produce your spiel (#2), CV (#4), cover letters (#6), and statements (#7).** For JMP (#1) and job talk (#3) templates, see my [repository](https://github.com/levicrews/crews-latex) of LaTeX style files. For a website (#5) template, see my [fork](https://github.com/levicrews/academic-website) of the Hugo Academic template.
+**This repository provides code and templates to help you produce your spiel (#2), CV (#4), cover letters (#6), and statements (#7).** For JMP (#1) and job talk (#3) templates, see my [repository](https://github.com/levicrews/crews-latex) of LaTeX style files. For a website (#5) template, see my [fork](https://github.com/levicrews/academic-website) of the `hugo-researcher` template from Olivier Roques.
 
 Here's an annotated file tree for this repository:
 
